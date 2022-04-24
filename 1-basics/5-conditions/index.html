@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditions</title>
+    <script src="https://unpkg.com/vue@3"></script>
+
+</head>
+<body>
+<div id="app">
+    {{ titleShow }}
+    <button @click="titleShow = !titleShow">Gizle / Göster</button>
+    <h3 v-if="titleShow">Başlık Toggle</h3>
+
+    <hr>
+    <h4>{{ counter }}</h4>
+    <button @click="counter++">+1</button>
+    <button @click="counter--">-1</button>
+    <h1 v-if="counter < 0">Negatif</h1>
+    <h3 v-else-if="counter > 0">Pozitif</h3>
+    <h2 v-else>Sıfır</h2>
+    <hr>
+    <h1 v-show="counter < 0">Negatif</h1>
+    <h3 v-show="counter > 0">Pozitif</h3>
+    <h2 v-show="counter === 0">Sıfır</h2>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

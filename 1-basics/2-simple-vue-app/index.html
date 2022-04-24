@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2 Simple Vue App</title>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <style>
+        .container {
+            width: 300px;
+            height: 200px;
+            border: 2px dashed #666;
+            background-color: #efefef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1>{{ title }}</h1>
+    <p>{{ message }}</p>
+    <div> {{ todoList }}</div>
+    <!--       <a href="{{link}}">Google</a>-->
+    <!--    <a v-bind:href="link.url" v-bind:target="link.target">{{link.title}}</a>-->
+    <a :href="link.url" :target="link.target">{{link.title}}</a>
+    <div v-bind:data-id="title" v-html="description"></div>
+    <!--    <button :onclick="changeTitle" >Tıkla</button>-->
+    <!--    <button v-on:click="changeTitle">Tıkla</button>-->
+    <!--    <button @click="title = 'Değiştirilmiş'">Tıkla</button>-->
+    <!--    {{ update('title') }}-->
+    <button @click="update('title')">Tıkla</button>
+    <button @click="update('link')">Link Değiştir</button>
+
+    <div class="container" @click="update('title')" @mousemove="trackMouse(1, $event)" @mouseenter="containerEnter" @mouseleave="containerOut">
+        {{ coords }}
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

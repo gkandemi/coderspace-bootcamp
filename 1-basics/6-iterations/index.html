@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditions</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="app">
+    <div class="container add-section">
+        <input type="text" v-model="todoValue" @keydown.enter="addNewTodo">
+        <button @click="addNewTodo">Ekle</button>
+    </div>
+    <div class="container">
+        <div v-if="fruitList.length > 0">
+            <ul class="todoList">
+                <!--                :class="{ustu_cizili : fruit.text === 'Elma'}">-->
+                <li v-for="(fruit, index) in fruitList"
+                    class="list-item">
+                    <span>{{ fruit.text }}</span>
+                    <button @click="deleteItem(fruit)">Sil</button>
+                </li>
+            </ul>
+            <div>{{ totalCount }}</div>
+        </div>
+        <p v-else>Henüz listeniz boş</p>
+    </div>
+    <pre> {{ fruitList }} </pre>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

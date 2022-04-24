@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two Way Data Binding</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" :value="personalName" @input="changeName">
+    <input type="text" :value="personalName" @input="personalName = $event.target.value">
+    {{ personalName }}
+    <input type="text" v-model="personalName" >
+</div>
+<script src="app.js"></script>
+</body>
+</html>

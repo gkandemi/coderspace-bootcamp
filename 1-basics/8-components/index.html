@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue LifeCycle</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <style>
+
+        #app{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        body {
+            font-family: "monospace";
+        }
+
+        .container {
+            border: 1px solid #666;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            padding: 5px;
+        }
+        button{
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <counter></counter>
+    <counter></counter>
+    <counter></counter>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

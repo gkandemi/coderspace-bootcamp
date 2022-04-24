@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reactivity</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <style>
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box{
+            border: 2px solid purple;
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            background-color: #ccc;
+            color : #fff;
+            font-family: sans-serif;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .red{ background-color: red}
+        .green{ background-color: green}
+        .blue{ background-color: blue}
+        .borderNone { border: none}
+
+        .invalid{
+            border : 1px solid red;
+        }
+
+        .middleStrong{
+            border: 1px solid blue
+        }
+
+        .veryStrong{
+            border: 1px solid green;
+        }
+
+        input{
+            outline : none;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="container">
+    <button @click="box1Class = !box1Class">Red</button>
+    <button @click="border = !border">Border</button>
+    <div class="box" :class="{ red : box1Class, borderNone : border}"> Red</div>
+    <div class="box"> Green</div>
+    <div class="box" :style="{ backgroundColor : 'purple'}"> Blue</div>
+    </div>
+    <hr>
+    <input type="password" :class="inputClasses" type="text" v-model="password">
+    <button :disabled="password.length < 6" @click="onSubmit">Save</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
