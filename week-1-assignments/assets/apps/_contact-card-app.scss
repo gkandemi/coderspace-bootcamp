@@ -1,0 +1,38 @@
+.contact--card--app {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  .contact-item {
+    width: 180px;
+    min-height: 282px;
+    border-radius: 5px;
+    background-color: #fff !important;
+    .invitation--header {
+      width: 180px;
+      height: 62px;
+      background: url("https://static-exp1.licdn.com/sc/h/cpemy7gsm8bzfb5nnbbnswfdm");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .contact--info--container {
+      padding: 10px;
+      margin-top: 45px;
+      p {
+        font-size: 15px !important;
+      }
+      a {
+        font-size: 15px !important;
+      }
+    }
+    .action--button--container {
+      margin-top: 10px;
+    }
+    .contact--image {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.course--planner-app--container {
+  .user--action--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .form-group {
+      width: 80%;
+      margin-right: 5px;
+    }
+  }
+}

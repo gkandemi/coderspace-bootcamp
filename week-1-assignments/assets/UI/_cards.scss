@@ -1,0 +1,13 @@
+.card {
+  background-color: #efefef;
+  // max-height: 300px;
+  min-width: 500px;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 1px solid #ccc;
+}
+.card-light {
+  background-color: $light-color;
+  border: 1px solid #eee;
+  border-bottom: 1px solid #ccc;
+}

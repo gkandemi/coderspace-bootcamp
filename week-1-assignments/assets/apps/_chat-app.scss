@@ -1,0 +1,88 @@
+.chat--app--container {
+  .card {
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #efefef;
+    border-bottom: 1px solid #ccc;
+    max-width: 400px !important;
+    .card--header {
+      background-color: $primary-color !important;
+      color: #fff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding: 10px;
+    }
+    .card--body {
+      background-color: #fff !important;
+      padding: 10px;
+      .active-user-item {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .badge {
+          background-color: #efefef;
+          // border-bottom: 1px solid $muted-color;
+          color: $dark-color;
+          text-transform: uppercase;
+          padding: 10px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+        .full_name {
+        }
+      }
+    }
+    .messages {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 10px;
+      height: calc(100vh - 200px);
+      overflow-y: scroll;
+      li {
+        max-width: 300px;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: $light-color;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        small {
+          margin-top: 10px;
+          align-self: flex-end;
+          font-size: 12px;
+          color: $muted-color;
+          font-style: italic;
+        }
+        &.current-user {
+          align-self: flex-end;
+          background-color: $info-color;
+          color: #fff;
+        }
+      }
+    }
+    .text-container {
+      margin-top: 30px;
+      input {
+        border: none;
+        padding: 10px;
+        height: 37px;
+        width: calc(500px - 70px);
+        border-bottom-left-radius: 5px;
+      }
+      button {
+        border-radius: 0 !important;
+        margin-bottom: 0;
+        border: none;
+        border-bottom-right-radius: 5px !important;
+      }
+    }
+  }
+}

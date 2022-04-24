@@ -1,0 +1,78 @@
+.bet--coupon--app {
+  .competition-list {
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #efefef;
+    border-bottom: 1px solid #ccc;
+  }
+  .my-coupon {
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #efefef;
+    border-bottom: 1px solid #ccc;
+    min-width: 400px !important;
+    .card--header {
+      background-color: rgb(5, 160, 244) !important;
+    }
+  }
+  .card--header {
+    background-color: #324354 !important;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+  }
+  .card--body {
+    background-color: #fff !important;
+    padding: 10px;
+  }
+  .competition-item {
+    margin-bottom: 5px;
+    padding: 10px 0;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:last-child {
+      border-bottom: none;
+    }
+    .info--container {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
+    }
+    .rates {
+      width: 150px;
+      text-align: right;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .coupon-item {
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 5px;
+    padding: 10px 0;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .coupon--total--container {
+    max-width: 300px;
+    .my-coupon {
+      min-width: 300px !important;
+    }
+    .multiply--container {
+      min-width: 300px !important;
+      button {
+        &:not(:last-child) {
+          margin-right: 5px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .multiply--buttons {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,17 @@
+.class--list--app {
+  .class-list {
+    list-style-type: none !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    li {
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+  textarea {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
