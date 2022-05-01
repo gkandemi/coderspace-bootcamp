@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "username": "gkandemir",
+      "email": "gokhan@gkandemir.com",
+      "password": "123123123",
+      "id": 1
+    },
+    {
+      "username": "dkandemir",
+      "email": "defne@puresol.io",
+      "password": "123123123",
+      "id": 2
+    }
+  ],
+  "articles": [],
+  "comments": [],
+  "categories": []
+}
