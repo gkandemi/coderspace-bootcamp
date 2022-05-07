@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hesabım</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+<div>
+  <!--  HEADER-->
+  <nav
+    class="navbar navbar-dark navbar-expand-lg sticky-top"
+    style="background-color: #8409DE;"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">QA</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kategoriler</a>
+          </li>
+        </ul>
+
+        <div class="d-flex me-auto">
+          <input
+            class="form-control searchBox"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </div>
+
+        <a href="login.html" class="btn btn-outline-primary me-0 mb-2">Giriş Yap</a>
+
+        <ul v-else class="navbar-nav me-0 mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">Depde Kandemir</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="my-questions.html">Sorularım</a>
+                <a class="dropdown-item" href="favorites.html">Favorilerim</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="my-account.html">Hesabım</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Çıkış Yap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--  HEADER-->
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-4 offset-4">
+        <div class="card">
+          <div class="card-header text-center">Hesap Detayları</div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label class="form-label">Ad Soyad</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Depde Kandemir"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">E-posta adresi</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="info@kablosuzkedi.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">İlgi Duyduğunuz Kategori</label>
+              <select class="form-select">
+                <option selected>Lütfen bir kategori seçiniz</option>
+                <option>
+                  Kategori Adı
+                </option>
+              </select>
+            </div>
+            <div class="mb-3 d-flex justify-content-end align-items-center">
+              <button class="btn btn-sm btn-primary">Düzenle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
