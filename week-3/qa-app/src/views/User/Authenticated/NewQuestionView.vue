@@ -57,10 +57,6 @@ export default {
             </div>
           </div>
 
-          <pre>
-            {{ userData }}
-          </pre>
-
           <div class="card-footer text-muted d-flex justify-content-end align-items-center">
             <button @click="onSubmit" class="btn btn-sm btn-primary">Kaydet</button>
           </div>

@@ -4,7 +4,7 @@
       "full_name": "Defne Kandemir",
       "email": "defne@kablosuzkedi.com",
       "password": "123123123",
-      "categoryId": 1,
+      "categoryId": 2,
       "id": 1
     },
     {
@@ -104,6 +104,54 @@
       "created_at": "2022-05-07T13:45:35.399Z",
       "userId": 1,
       "id": 4
+    },
+    {
+      "title": "Vue3 Composition API",
+      "details": "<p>Vue3 Composition API Nasıl oluyor?</p>",
+      "categoryId": 1,
+      "created_at": "2022-05-08T11:18:03.177Z",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "title": "Vue JavaScript Framework",
+      "details": "<p>Vue JavaScript Framework</p>",
+      "categoryId": 2,
+      "created_at": "2022-05-08T11:18:32.374Z",
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "title": "Bu nasil FW",
+      "details": "<p>Bu nasil FW! Süpermiş.</p>",
+      "categoryId": 1,
+      "created_at": "2022-05-08T11:36:24.936Z",
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "title": "Bu Şafak Tarafından Sorulmuş Bir Sorudur",
+      "details": "<p>Bu Şafak Tarafından Sorulmuş Bir Sorudur</p>",
+      "categoryId": 12,
+      "created_at": "2022-05-08T11:38:38.252Z",
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "title": "Garip soru",
+      "details": "<p>aaaaa</p>",
+      "categoryId": 11,
+      "created_at": "2022-05-08T11:39:51.118Z",
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "title": "Deneme Tekrar",
+      "details": "<p>Deneme Tekrar</p>",
+      "categoryId": 7,
+      "created_at": "2022-05-08T11:40:05.518Z",
+      "userId": 1,
+      "id": 10
     }
   ],
   "comments": [
@@ -164,6 +212,13 @@
       "id": 8
     }
   ],
-  "favorites": [],
+  "favorites": [
+    {
+      "userId": 1,
+      "questionId": 1,
+      "created_at": "2022-05-08T08:25:27.267Z",
+      "id": 1
+    }
+  ],
   "likes": []
 }

@@ -138,3 +138,17 @@ body {
   -moz-box-shadow: 0px 3px 5px -4px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 3px 5px -4px rgba(0, 0, 0, 0.75) !important;
 }
+
+.spinner-border {
+  color : #8409de;
+}
+
+.loading-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccccccc9;
+  z-index: 100000;
+}

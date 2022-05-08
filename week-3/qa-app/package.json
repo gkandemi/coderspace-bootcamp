@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
+    "lodash": "^4.17.21",
     "moment": "^2.29.3",
     "secure-ls": "^1.2.6",
     "vue": "^3.2.13",

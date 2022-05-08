@@ -9,7 +9,11 @@ export default {
   methods : {
     ...mapMutations({
       logout : "users/logout"
-    })
+    }),
+    searchQuestions(e){
+      console.log(e.target.value);
+      this.$store.dispatch("questions/fetchList", { query : e.target.value})
+    }
   },
   computed: {
     ...mapGetters({
@@ -53,6 +57,7 @@ export default {
               type="search"
               placeholder="Search"
               aria-label="Search"
+              @keydown.enter="searchQuestions"
           />
         </div>
 
